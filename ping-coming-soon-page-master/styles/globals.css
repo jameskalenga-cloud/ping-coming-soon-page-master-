@@ -1,0 +1,120 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font_family: "Work Sans", serif;
+  --Blue_color: hsl(223, 87%, 63%);
+  --Pale_Blue_color: hsl(223, 100%, 88%);
+  --Light_Red_color: hsl(354, 100%, 66%);
+  --Gray_color: hsl(0, 0%, 59%);
+  --Very_color: Dark Blue: hsl(209, 33%, 12%);
+  --Weights_300:300;
+  --Weights_600:600;
+  --Weights_700:700;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container_{
+  font-family: "Work Sans", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.launch{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: var(--Gray_color)
+}
+
+
+.header_{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.soon{
+  color: var(--foreground);
+  font-weight: var(--Weights_700);
+  
+}
+
+.subscribe{
+  font-size: 23px;
+}
+
+
+.mail_button{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.mail{
+  width: 68%;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid var(--Pale_Blue_color);
+  outline: none; /* Removes default focus outline */
+  padding-left: 12px;
+}
+
+.mail::placeholder {
+  color:var(--Pale_Blue_color);
+  position: relative;
+  left: 30px; 
+}
+
+
+
+
+.button_notify{
+  width: 28%;
+  border-radius: 30px;
+  background-color: var(--Blue_color);
+  color: var(--background);
+  font-size: 15px;
+  font-weight: var(--Weights_600);
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Small shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+
+.button_notify:active {
+  background-color: #00408d; /* Even darker blue when clicked */
+  transform: scale(0.95); /* Slightly shrink button on click */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer_section{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.socials{
+  margin: 35px 30px 20px 0;
+  width: 30px;
+  height: 30px;
+  color: var(--Blue_color) !important;
+}
+
+.footer_text{
+  color: var(--Gray_color)
+}
